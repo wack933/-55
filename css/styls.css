@@ -1,0 +1,139 @@
+/* ================================
+   Reset เบื้องต้น
+================================ */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tahoma", "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf3; /* สีพื้นหลังโทนอุ่น */
+    color: #333;
+}
+
+/* ================================
+   ส่วนหัว (Header)
+================================ */
+header {
+    background: linear-gradient(135deg, #ff914d, #ffbb70);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid #cc6e30;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* ================================
+   เมนูนำทาง (Navigation)
+================================ */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+    background: #fff;
+    color: #cc6e30;
+}
+
+/* ================================
+   ส่วนเนื้อหา (Main)
+================================ */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #cc6e30;
+    margin-bottom: 1rem;
+    border-left: 8px solid #ff914d;
+    padding-left: 10px;
+}
+
+article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+article h3 {
+    color: #2d6a4f;
+    margin-bottom: 0.5rem;
+}
+
+article img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 12px;
+}
+
+/* ================================
+   อาหารพื้นบ้าน (Food Section)
+================================ */
+#food ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+}
+
+#food li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+/* ================================
+   ส่วนท้าย (Footer)
+================================ */
+footer {
+    background: #2d6a4f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-top: 5px solid #1b4332;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
