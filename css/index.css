@@ -1,50 +1,94 @@
-body {
-    font-family: "Tahoma", sans-serif;
+/* รีเซ็ตค่าเบื้องต้น */
+* {
     margin: 0;
-    background: #fffaf3;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Prompt", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f0fff0; /* เขียวอ่อนมาก */
+}
+
+/* ส่วนหัว */
 header {
-    background: linear-gradient(135deg, #ff914d, #ffbb70);
-    color: #fff;
-    padding: 1.5rem;
+    background: #2e7d32; /* เขียวเข้ม */
+    padding: 15px;
     text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 1rem 0 0;
+    gap: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.2);
+    padding: 5px 12px;
     transition: 0.3s;
+    border-radius: 4px;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    background: #fff;
-    color: #cc6e30;
+nav a:hover,
+nav a.active {
+    background: #66bb6a; /* เขียวสด */
 }
 
+/* main content */
 main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
+    padding: 40px;
+    background: #ffffff;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2e7d32; /* เขียวเข้ม */
+    margin-bottom: 10px;
+    border-left: 5px solid #66bb6a;
+    padding-left: 10px;
+}
+
+/* จัดข้อความในย่อหน้า */
+p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* รูปภาพให้พอดีหน้าจอ */
+.place-img {
+    display: block;
+    width: 100%;       /* กว้างเต็มคอนเทนต์ */
+    height: auto;      /* สูงอัตโนมัติ */
+    margin: 20px auto; /* เว้นด้านบนล่าง */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* footer */
 footer {
-    background: #2d6a4f;
-    color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
+    background: #2e7d32;
+    color: #fff;
+    margin-top: 20px;
+    border-top: 4px solid #66bb6a;
 }
